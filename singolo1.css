@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;  
+    list-style: none; 
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+    font-weight:normal;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    width: 1020px;
+}
+
+.header-top{
+    background-color: #2d303a;
+    height: 89px;
+    display: grid;
+    grid-template-columns: 146px 10px 439px 425px;
+    font-family: "Lato";
+}
+
+.website-name{
+    color:#ffffff;
+    /*font-family: "Lato";*/
+    font-size: 25px;
+    margin-left: 40px;
+    letter-spacing: -0.5px;
+    padding: 29px 0px;
+    
+}
+
+.star-symbol{
+    color:#f06c64;
+    font-size: 25px;
+    padding-top: 29px;
+}
+
+.navigation-bar{
+    font-size: 12px;
+    color:#ffffff;
+    display: grid;
+    grid-template-columns:62px 6px 77px 6px 90px 6px 65px 6px 80px 27px;
+    text-align: center;
+    margin-top:42px;
+}
+
+.navigation-bar > li > a{
+    color: #ffffff;
+}
+
+.navigation-bar > li > a.active-link{
+    color:#f06c64;
+}
+
+.navigation-bar > li > a:hover{
+    cursor: pointer;
+    color: #f06c64;
+}
+
+.dot{
+    font-size: 18px;
+    color:#494e62;
+    margin-top: -8px;
+}
+.header-bottom{
+    background-color: #323746;
+    height: 6px; 
+}
+
+.slider-top{
+    background-color:#f06c64;
+    height:594px;
+    
+}
+
+.slider-bottom{
+    background-color:#ea676b;
+    height:6px;
+}
+
+.content{
+    background-color: #f2f2f2;
+    height: 501px;
+}
