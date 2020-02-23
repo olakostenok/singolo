@@ -15,6 +15,11 @@ h1,h2,h3,h4,h5,h6{
 
 .container {
     width: 1020px;
+    font-family: "Lato";
+}
+
+.section{
+    padding:60px 40px;
 }
 
 .header-top{
@@ -22,12 +27,10 @@ h1,h2,h3,h4,h5,h6{
     height: 89px;
     display: grid;
     grid-template-columns: 146px 10px 439px 425px;
-    font-family: "Lato";
 }
 
 .website-name{
     color:#ffffff;
-    /*font-family: "Lato";*/
     font-size: 25px;
     margin-left: 40px;
     letter-spacing: -0.5px;
@@ -84,7 +87,81 @@ h1,h2,h3,h4,h5,h6{
     height:6px;
 }
 
-.content{
+.block{
+    display: grid;
+    grid-template-columns: 60px 260px;
+}
+.block > img{
+    width: 60px;
+    margin: auto;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.main-text{
+    grid-area: text;
+}
+
+.our-services-top{
     background-color: #f2f2f2;
-    height: 501px;
+    height: 374px;
+    display: grid;
+    grid-template-areas:
+    "text text text"
+    "one two three"
+    "four five six";
+    grid-template-columns: 320px 320px 300px;
+    grid-template-rows: 130px 122px 122px;
+}
+
+.headline{
+    font-size: 30px;
+    color:#666d89;
+}
+
+.description{
+    font-size: 18px;
+    color:#767e9e;
+    font-weight: lighter;
+    padding: 16px 0;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.paragraph{
+    padding: 0 20px;
+    font-size: 12px;
+    color:#767e9e;
+    text-align: justify;
+    line-height: 22px;    
+}
+
+.caption{
+    color: #666d89;
+    font-size: 18px;
+    padding: 26px 0 8px 0;
+}}
+
+.main-text{
+    grid-area: mt;
+}
+
+.our-services-bottom{
+    background-color: #ffffff;
+    height: 6px;
 }
