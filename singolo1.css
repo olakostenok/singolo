@@ -165,3 +165,40 @@ h1,h2,h3,h4,h5,h6{
     background-color: #ffffff;
     height: 6px;
 }
+
+.slider-top{
+    display: grid;
+    grid-template-columns: 100px 265px 555px 100px;
+    margin: auto;
+}
+
+.slider-top > img{
+    margin: auto;
+}
+
+.vertical-iphone{
+    padding-bottom: 5px;
+}
+
+.horizontal-iphone{
+    padding: 0 0 5px 48px;
+}
+
+.next{
+    padding: 0 0 5px 5px;
+}
+
+.prev{
+    padding-bottom: 3px;
+}
+
+.button{
+    background-color:#f06c64;
+    border: none;
+    outline: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #dc625a;
+}
