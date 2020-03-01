@@ -12,50 +12,50 @@ h1,h2,h3,h4,h5,h6{
     padding:0;
 }
 
-button, div{
-    margin:0;
-    padding:0;
-}
-
 .container {
     width: 1020px;
     font-family: "Lato";
 }
 
 .section{
-    padding: 45px 40px;
+    padding: 0 40px;
 }
 
 .headline{
     font-size: 30px;
     color:#666d89;
     letter-spacing: 0.2px;
-    margin-left: -1px;
+    padding-top: 45px;
+}
+
+.about-us-headline{
+    padding-top: 59px;
 }
 
 .description{
     font-size: 18px;
     color:#767e9e;
     font-weight: lighter;
-    padding: 18px 0 11px 0;
+    padding: 19px 0 9px 0;
     line-height: 30px;
     text-align: justify;
     margin-left: -1px;
 }
 
+.about-us-description{
+    padding: 18px 0 44px 0;
+}
+
 .portfolio-top{
     background-color: #2d303a;
-    height: 759px;
+    height: 849px;
 }
 
 .tab{
     background-color: #2d303a;
-    margin-right: 5px;
+    margin-right: 7px;
     margin-left: 1px;
-    padding-top: 2.8px;
-    padding-bottom: 2.7px;
-    padding-left: 7px;
-    padding-right: 6px;
+    padding: 1.8px 6px 3.2px 5px;
     border: 1px solid #666d89;
     border-radius: 5px;
     font-family: "Lato";
@@ -90,7 +90,69 @@ button, div{
 
 .about-us-top{
     background-color: #f2f2f2;
-    height: 728px;
+    height: 727px;
+}
+
+.staff{
+    display: flex;
+    width:960px;
+    color: #767e9e;
+    font-size: 12px;
+}
+
+.staff > img{
+    margin: 0 20px 20px 0;
+}
+
+.paragraph{
+    font-size: 12px;
+    color:#767e9e;
+    text-align: justify;
+    line-height: 22px;    
+    padding-right: 20px;
+    margin-left: -1px;
+}
+
+.about-us-caption{
+    color: #666d89;
+    font-size: 18px;
+    padding: 9px 0 8px 0;
+}
+
+.social_icon{
+    width: 14px;
+    height: 14px;
+    padding: 8px;
+    border: 1px solid #6a718c;
+    border-radius: 50%;
+    margin: 22px 5px 0 1px;
+}
+
+.social_icon:hover{
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.facebook path:hover{
+    fill: #3b5998;
+    cursor: pointer;
+}
+
+.google path:hover{
+    fill: #db4a39;
+    cursor: pointer;
+}
+
+.twitter path:hover{
+    fill: #00acee;
+    cursor: pointer;
+}
+
+.linkedin path:hover{
+    fill: #0e76a8;
+    cursor: pointer;
 }
 
 .about-us-bottom{
