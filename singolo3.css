@@ -1,0 +1,133 @@
+.container {
+    width: 1020px;
+    font-family: "Lato";
+}
+
+.section{
+    padding: 0 40px;
+}
+
+.get-a-quote-top{
+    height: 648px;
+    background-color: #f06c64;
+}
+
+.headline{
+    font-size: 30px;
+    color:#f0d8d9;
+    letter-spacing: -0.2px;
+    padding-top: 59px;
+    font-weight: 900;
+}
+
+.description{
+    font-size: 18px;
+    color:#f0d8d9;
+    font-weight: lighter;
+    padding: 18px 0 9px 0;
+    line-height: 30px;
+    text-align: justify;
+}
+.form-and-information{
+    display: flex;
+    
+}
+
+.form{
+    margin-top: 35px;
+    margin-right: 20px;
+    max-width: 620px;
+}
+
+.form > input, textarea{
+    width: 603px;
+    height: 36px;
+    background-color: #d6564f;
+    outline: none;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 6px;
+    padding-left: 15px;
+    color:#f0d8d9;
+}
+
+.form > input::placeholder{
+    color: #f48c8f;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.form > textarea::placeholder{
+    color: #f48c8f;
+    font-size: 11px;
+    font-weight: 400;
+    padding-top: 9px;
+    letter-spacing: 0.4px;
+}
+
+:focus:input:placeholder{
+    color: transparent;
+}
+
+.form > textarea{
+    height: 198px;
+    resize: none;
+    width: 602px;
+}
+
+.form > input.submit-bottom{
+    width: 150px;
+    background-color: #d6564f;
+    color:#f0d8d9;
+    margin-top: 16px;
+    margin-left: 225px;
+}
+
+.caption-light{
+    font-size: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+    margin: 33px 0 8px 0;
+    letter-spacing: -0.1px;
+}
+
+.info{
+    font-size: 12px;
+    color:#f0d8d9;
+    text-align: justify;
+    letter-spacing: -0.06px;
+    line-height: 22.3px;
+}
+
+.contact-information{
+    margin-top: 20px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+.contact-information > a{
+    color: #f0d8d9;
+}
+
+.location-icon{
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.phone-icon{
+    margin-right: 9px;
+    margin-left: 1px;
+}
+
+.mail-icon{
+    margin-right: 7px;
+}
+.get-a-quote-bottom{
+    height: 6px;
+    background-color: #ea676b;
+}
+
+.footer{
+    height: 76px;
+    background-color: #2d303a;
+}
