@@ -4,7 +4,7 @@
 }
 
 .section{
-    padding: 0 40px;
+    padding:  0 40px;
 }
 
 .get-a-quote-top{
@@ -130,4 +130,50 @@
 .footer{
     height: 76px;
     background-color: #2d303a;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 34px;
 }
+
+.copyright{
+    font-size: 12px ;
+    color: #666d89;
+    padding-top: 30px;
+    padding-left: 3px;
+    letter-spacing: -0.3px;
+}
+
+.social_icon{
+    width: 14px;
+    height: 14px;
+    padding: 8px;
+    border: 1px solid #6a718c;
+    border-radius: 50%;
+    margin: 22px 5px 0 1px;
+}
+
+.social_icon:hover{
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.facebook path:hover{
+    fill: #3b5998;
+    cursor: pointer;
+}
+
+.google path:hover{
+    fill: #db4a39;
+    cursor: pointer;
+}
+
+.twitter path:hover{
+    fill: #00acee;
+    cursor: pointer;
+}
+
+.linkedin path:hover{
+    fill: #0e76a8;
+    cursor: pointer;
