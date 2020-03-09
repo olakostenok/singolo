@@ -1,8 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;  
+* { 
     list-style: none; 
     text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0; 
 }
 
 .container {
@@ -357,11 +360,11 @@
 }
 
 .form > input, textarea{
-    width: 605px;
-    height: 38px;
+    width: 604px;
+    height: 37px;
     background-color: #d6564f;
     outline: none;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     border: none;
     border-radius: 6px;
     padding-left: 15px;
@@ -387,9 +390,9 @@
 }
 
 .form > textarea{
-    height: 193px;
+    height: 191px;
     resize: none;
-    width: 605px;
+    width: 603px;
     padding-top: 9px;
 }
 
@@ -397,7 +400,7 @@
     width: 150px;
     background-color: #d6564f;
     color:#f0d8d9;
-    margin-top: 16px;
+    margin-top: 5px;
     margin-left: 225px;
 }
 
