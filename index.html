@@ -4,151 +4,172 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header class="container">
+    <header class="container header">
         <div class="section header-top">
+            <div class="burger-menu">
+                <img src="/image/Burger-menu-icon.png">
+            </div>
+
             <h1 class="website-name">SINGOLO</h1>
             <div class="star-symbol">*</div>
             <div></div>
-            <ul class="navigation-bar">
-                <li ><a href="#" class="active-link">HOME</a></li>
+            <nav class="header__navigation" id="navigation-block">
+            <ul id ="menu" class="navigation-bar">
+                <li ><a href="#home" class="active-link">HOME</a></li>
                 <li class="dot">.</li>
-                <li><a href="#">SERVICES</a></li>
+                <li><a href="#services">SERVICES</a></li>
                 <li class="dot">.</li>
-                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li class="dot">.</li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li class="dot">.</li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
+            </nav>
         </div>
             <div class="header-bottom"></div>
     </header>
-    <div class="container">
-        <div class="slider-top">
-            <button class="button"><img class="prev" src="image/prev.svg"></button>
-            <img class="vertical-iphone" src="image/iphone_vertical.png">
-            <img class="horizontal-iphone"src="image/iphone_horizontal.png">
-            <button class="button"><img class="next" src="image/next.svg"></button>
-        </div>
-        <div class="slider-bottom"></div>
-    </div>
 
-    <div class="container">
-        <div class="section our-services-top">
-         <div class="main-text">
-            <div class="headline">
-                <h2><b>Our Services</b></h2>
+    <div id = "wrapper" class="container">
+
+        <div id ="home" class="carousel">
+            <div  class ="slider">
+                <div class="slider-top">
+                    <button class="button" data-action="prev"><img class="prev" src="image/prev.svg"></button>
+                    
+                    <button class="button" data-action="next"><img class="next" src="image/next.svg"></button>
+                </div>
+                <div class="slider-bottom"></div>
+
+                <div class="slider-main">
+                    <div class="slide active-slide">
+                        <img src="image/slide-1.png">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="image/slide2.jpg">
+                    </div>
+                </div>
             </div>
-            <div class="description">
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
-                eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
-                tortor mauris condimentum nibh.
-            </div>
-         </div>
-          
-         <div class ="advantages">
-         <div class="block one">
-             <img src="image/pen.png">
-                <div class="paragraph"><h3 class="caption"><b>Custom Design</b></h3>
-            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-                </div>
-         </div>
-
-         <div class="block two">
-            <img src="image/lamp.png">  
-                <div class="paragraph"><h3 class="caption"><b>Inovative Ideas</b></h3>
-            Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-                </div>
-         </div> 
-
-         <div class="block three">
-            <img src="image/heart.png">
-                <div class="paragraph"><h3 class="caption"><b>Love Is The Answer</b></h3>
-            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-                </div>
         </div>
+    
+        <div id="services" class="services">
+            <div class="section our-services-top">
+                <div class="main-text">
+                    <div class="headline our-services-headline">
+                        <h2><b>Our Services</b></h2>
+                    </div>
+                    <div class="description our-services-description">
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
+                    Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
+                    eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
+                    tortor mauris condimentum nibh.
+                    </div>
+                </div>
+
+                <div class ="advantages">
+                    <div class="block one">
+                        <img src="image/pen.png">
+                            <div class="paragraph"><h3 class="caption our-services-caption"><b>Custom Design</b></h3>
+                            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+                            </div>
+                    </div>
+
+                    <div class="block two">
+                        <img src="image/lamp.png">  
+                            <div class="paragraph"><h3 class="caption our-services-caption"><b>Inovative Ideas</b></h3>
+                            Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+                            </div>
+                    </div> 
+
+                    <div class="block three">
+                        <img src="image/heart.png">
+                            <div class="paragraph"><h3 class="caption our-services-caption"><b>Love Is The Answer</b></h3>
+                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+                            </div>
+                    </div>
         
-         <div class="block four">
-            <img src="image/phone.png">
-                <div class="paragraph"><h3 class="caption"><b>Responsive Layout</b></h3>
-            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.
-                </div>
-        </div>
+                    <div class="block four">
+                        <img src="image/phone.png">
+                            <div class="paragraph"><h3 class="caption our-services-caption"><b>Responsive Layout</b></h3>
+                            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.
+                            </div>
+                        </div>
 
-         <div class="block five">
-            <img src="image/dialog.png">  
-                <div class="paragraph"><h3 class="caption"><b>24 / 7 Support</b></h3>
-            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-tesque egestas venenatis lorem .
+                    <div class="block five">
+                        <img src="image/dialog.png">  
+                            <div class="paragraph"><h3 class="caption our-services-caption"><b>24 / 7 Support</b></h3>
+                            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-tesque egestas venenatis lorem .
+                            </div>
+                    </div> 
+
+                    <div class="block six">
+                        <img src="image/star.png">
+                            <div class="paragraph"><h3 class="caption our-services-caption"><b>Feel Like A Star</b></h3>
+                            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                            </div>
+                    </div>
                 </div>
+            </div>
+            <div class="our-services-bottom"></div>
         </div> 
 
-         <div class="block six">
-            <img src="image/star.png">
-                <div class="paragraph"><h3 class="caption"><b>Feel Like A Star</b></h3>
-            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+        <div id ="portfolio" class="portfolio">
+            <div  class="section portfolio-top">
+                <div class="headline">
+                    <h2><b>Portfolio</b></h2>
                 </div>
+                <div class="description"> 
+                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
+                    eget lacinia odio sem nec elit. 
+                </div>
+                <div id="tabs" class="tabs">
+                    <button class="tab active-tab">All</button>
+                    <button class="tab">Web Design</button>
+                    <button class="tab">Graphic Design</button>
+                    <button class="tab">Artwork</button>
+                </div>
+                <div id = "gallery"class="gallery">
+                    <img src = "image/image1.png">
+                    <img src = "image/image2.png">
+                    <img src = "image/image3.png">
+                    <img src = "image/image4.png">
+                    <img src = "image/image5.png">
+                    <img src = "image/image6.png">
+                    <img src = "image/image7.png">
+                    <img src = "image/image8.png">
+                    <img src = "image/image9.png">
+                    <img src = "image/image10.png">
+                    <img src = "image/image11.png">
+                    <img src = "image/image12.png">
+                </div>
+            </div>
+            <div class="container portfolio-bottom"></div>
         </div>
-        </div>
-    </div>
+    
+        <div id ="about" class="about">
+            <div class="section about-us-top">
+                <div class="headline about-us-headline">
+                    <h2><b>About Us</b></h2>
+                </div>
+                <div class="description about-us-description">
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
+                    Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
+                    eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
+                    tortor mauris condimentum nibh.
+                </div>
+                <div class="staff">
 
-        <div class="our-services-bottom"></div>
-    </div>
-
-    <div class="container">
-        <div class="section portfolio-top">
-            <div class="headline">
-            <h2><b>Portfolio</b></h2>
-            </div>
-            <div class="description portfolio"> 
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
-                eget lacinia odio sem nec elit. 
-            </div>
-            <div>
-                <button class="tab active-tab">All</button>
-                <button class="tab">Web Design</button>
-                <button class="tab">Graphic Design</button>
-                <button class="tab">Artwork</button>
-            </div>
-            <div class="gallery">
-                <img src = "image/image1.png">
-                <img src = "image/image2.png">
-                <img src = "image/image3.png">
-                <img src = "image/image4.png">
-                <img src = "image/image5.png">
-                <img src = "image/image6.png">
-                <img src = "image/image7.png">
-                <img src = "image/image8.png">
-                <img src = "image/image9.png">
-                <img src = "image/image10.png">
-                <img src = "image/image11.png">
-                <img src = "image/image12.png">
-            </div>
-        </div>
-    </div>
-    <div class="container portfolio-bottom"></div>
-
-    <div class="container">
-        <div class="section about-us-top">
-            <div class="headline about-us-headline">
-                <h2><b>About Us</b></h2>
-            </div>
-            <div class="description about-us-description">
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
-            Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
-            eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
-            tortor mauris condimentum nibh.
-            </div>
-            <div class="staff">
-                <div class="about-us-paragraph">
-                    <img src = "image/adam.png">
-                        <h3 class="about-us-caption"><b>Adam Jensen</b></h3>
-                            Quisque luctus, quam eget molestie commodo,
-                            lacus purus cursus purus, nec rutrum tellus dolor id lorem.                        
-                                <div>
+                    <div class="about-us-paragraph">
+                        <img src = "image/adam.png">
+                            <h3 class="about-us-caption"><b>Adam Jensen</b></h3>
+                                Quisque luctus, quam eget molestie commodo,
+                                lacus purus cursus purus, nec rutrum tellus dolor id lorem.                        
+                                <div class="social">
                                     <svg xmlns="http://www.w3.org/2000/svg"  
                                     class="social_icon facebook" 
                                     viewBox="0 0 320 512">
@@ -158,141 +179,179 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" 
                                     class="social_icon google"
                                     viewBox="0 0 89.61 88">
-                                    <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/></svg>
+                                    <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/>
+                                    </svg>
 
                                     <svg xmlns="http://www.w3.org/2000/svg" 
                                     class="social_icon twitter" 
                                     viewBox="0 0 512 512">
-                                    <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                                    <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                                    </svg>
                                     
                                     <svg xmlns="http://www.w3.org/2000/svg"  
                                     class="social_icon linkedin"  
                                     viewBox="0 0 448 512">
-                                    <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-                                </div>
-                </div>
-                <div class="about-us-paragraph">
-                    <img src = "image/desmond.png">
-                        <h3 class="about-us-caption"><b>Desmond Miles</b></h3>
-                            Curabitur vestibulum eget mauris quis laoreet. 
-                            Phasellus in quam laoreet, viverra lacus ut, ultrices velit.                           
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg"  
-                                class="social_icon facebook" 
-                                viewBox="0 0 320 512">
-                                <path fill="#656d89" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                                </svg>
+                                    <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                                    </svg>
+                                 </div>
+                     </div>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" 
-                                class="social_icon google"
-                                viewBox="0 0 89.61 88">
-                                <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/></g></g></svg>
+                    <div class="about-us-paragraph">
+                        <img src = "image/desmond.png">
+                            <h3 class="about-us-caption"><b>Desmond Miles</b></h3>
+                                Curabitur vestibulum eget mauris quis laoreet. 
+                                Phasellus in quam laoreet, viverra lacus ut, ultrices velit.                           
+                                <div class="social">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  
+                                    class="social_icon facebook" 
+                                    viewBox="0 0 320 512">
+                                    <path fill="#656d89" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                                    </svg>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" 
-                                class="social_icon twitter" 
-                                viewBox="0 0 512 512">
-                                <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    class="social_icon google"
+                                    viewBox="0 0 89.61 88">
+                                    <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/></g></g>
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    class="social_icon twitter" 
+                                    viewBox="0 0 512 512">
+                                    <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                                    </svg>
                                 
-                                <svg xmlns="http://www.w3.org/2000/svg"  
-                                class="social_icon linkedin"  
-                                viewBox="0 0 448 512">
-                                <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-                            </div>
-                </div>
-                <div class="about-us-paragraph">
-                    <img src = "image/scolara.png">
-                        <h3 class="about-us-caption"><b>Scolara Visari</b></h3>
-                             Nulla sed nunc et tortor luctus faucibus. 
-                             Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg"  
-                                class="social_icon facebook" 
-                                viewBox="0 0 320 512">
-                                <path fill="#656d89" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                                </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  
+                                    class="social_icon linkedin"  
+                                    viewBox="0 0 448 512">
+                                    <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                                    </svg>
+                                 </div>
+                     </div>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" 
-                                class="social_icon google"
-                                viewBox="0 0 89.61 88">
-                                <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/></g></g></svg>
+                    <div class="about-us-paragraph">
+                        <img src = "image/scolara.png">
+                            <h3 class="about-us-caption"><b>Scolara Visari</b></h3>
+                                Nulla sed nunc et tortor luctus faucibus. 
+                                Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+                                <div class="social">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  
+                                    class="social_icon facebook" 
+                                    viewBox="0 0 320 512">
+                                    <path fill="#656d89" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                                    </svg>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" 
-                                class="social_icon twitter" 
-                                viewBox="0 0 512 512">
-                                <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    class="social_icon google"
+                                    viewBox="0 0 89.61 88">
+                                    <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/></g></g>
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    class="social_icon twitter" 
+                                    viewBox="0 0 512 512">
+                                    <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                                    </svg>
                                 
-                                <svg xmlns="http://www.w3.org/2000/svg"  
-                                class="social_icon linkedin"  
-                                viewBox="0 0 448 512">
-                                <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-                            </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  
+                                    class="social_icon linkedin"  
+                                    viewBox="0 0 448 512">
+                                    <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                                    </svg>
+                                 </div>
+                     </div>
+                 </div>
+             </div>
+            <div class="container about-us-bottom"></div>
+         </div>
+
+        <div id ="contact" class="contact">
+            <div class="section get-a-quote-top">
+                <div class="headline3">Get a Quote</div>
+                <div class="description3">
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
+                    Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget 
+                    lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
+                    tortor mauris condimentum nibh.
                 </div>
-            </div>
-        </div>
-        <div class="container about-us-bottom"></div>
-    </div>
-    <div class="container">
-        <div class="section get-a-quote-top">
-            <div class="headline3">Get a Quote</div>
-            <div class="description3">
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget 
-                lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
-                tortor mauris condimentum nibh.
-            </div>
-            <div class="form-and-information">
-                <form class="form">
-                    <input type="text" placeholder="Name (Required)" maxlength="20" pattern="[A-Za-z]{1,20}" required>
-                    <input type="email" placeholder="Email (Required)" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea type="text" placeholder="Describe your project in detail..."></textarea>
-                    <input class="submit-bottom" type="submit" value="Submit">
-                </form>
-                <div class="information">
-                    <div class="caption-light">Contact Information</div>
-                    <div class="info">
-                    Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit 
-                    amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. 
-                    Morbi at aliquet turpis,  et consequat felis. 
-                    </div>
-                    <div class="info contact-information">
-                        <img class="location-icon" src="image/location.png">
-                            Elm St. 14/05 Lost City<br>
-                        <img class="phone-icon" src="image/iphone.png">
-                        <a href="tel: 03528 331 86 35" type="tel">03528 331 86 35</a><br>
-                        <img class="mail-icon" src="image/mail.png">
-                        <a href ="mailto: info@singolo.com" type="email">info@singolo.com</a><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section get-a-quote-bottom"></div>
+
+                <div class="form-and-information">
+                    <form class="form">
+                        <input type="text" name="name" class="form-field" placeholder="Name (Required)" maxlength="20" pattern="[A-Za-z]{1,20}" required>
+                        <input type="email" name="email" class="form-field" placeholder="Email (Required)" required>
+                        <input type="text" name="theme" class="form-field" placeholder="Subject">
+                        <textarea type="text" name="description" class="form-field" placeholder="Describe your project in detail..."></textarea>
+                        <input class="submit-bottom" type="submit" value="SEND">
+                    </form>
+
+                    <div class="information">
+                        <div class="caption-light">Contact Information</div>
+                        <div class="info">
+                            Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit 
+                            amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. 
+                            Morbi at aliquet turpis,  et consequat felis. 
+                        </div>
+
+                        <div class="info contact-information">
+                            <img class="location-icon" src="image/location.png">
+                                Elm St. 14/05 Lost City<br>
+                            <img class="phone-icon" src="image/iphone.png">
+                            <a href="tel: 03528 331 86 35" type="tel">03528 331 86 35</a><br>
+                            <img class="mail-icon" src="image/mail.png">
+                            <a href ="mailto: info@singolo.com" type="email">info@singolo.com</a><br>
+                         </div>
+                     </div>
+
+                     <div class="form-submited">
+                         <div class="form-submited-modal">
+                             <div class="form-submited-main">
+                                <h3>Письмо отправлено</h3>
+                                <p class="name">Name: <span></span></p>
+                                <p class="email">Email: <span></span></p>
+                                <p class="theme">Theme: <span></span></p>
+                                <p class="desc">Description: <span></span></p>
+                                
+                             </div>
+                             <div class="form-submited-control">
+                                 <button class="modal-close">Ok</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="section get-a-quote-bottom"></div>
+         </div>
     
     
-    <footer class="section footer">
-        <div class="copyright">&#169; Copyright 2020</div>
-        <div class="icons">
-                <svg xmlns="http://www.w3.org/2000/svg"  
-                class="social_icon facebook" 
-                viewBox="0 0 320 512">
-                <path fill="#656d89" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                </svg>
+        <footer class="section footer">
+            <div class="copyright">&#169; Copyright 2020</div>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg"  
+                    class="social_icon facebook" 
+                    viewBox="0 0 320 512">
+                    <path fill="#656d89" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                    </svg>
 
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                class="social_icon google"
-                viewBox="0 0 89.61 88">
-                <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/></g></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    class="social_icon google"
+                    viewBox="0 0 89.61 88">
+                    <path fill="#656d89" d="M4.75,21.94c0,7.47,2.5,12.86,7.42,16a21.13,21.13,0,0,0,11.12,3c.59,0,1.07,0,1.4,0a14.35,14.35,0,0,0,2.95,10h-.17C21,50.89,0,52.23,0,69.52,0,87.1,19.31,88,23.18,88h1.27a35.72,35.72,0,0,0,14.88-3.21C47.07,81,51,74.49,51,65.36c0-8.82-6-14.07-10.35-17.91-2.67-2.34-5-4.36-5-6.33s1.68-3.5,3.81-5.41c3.45-3.08,6.69-7.46,6.69-15.75,0-7.29-.94-12.18-6.76-15.28A20.78,20.78,0,0,1,43.23,4C46.38,3.56,51,3.07,51,.5V0H28C27.78,0,4.75.86,4.75,21.94ZM41.87,67c.44,7-5.58,12.22-14.61,12.88S10.54,76.43,10.1,69.4a11.58,11.58,0,0,1,4.17-9.31,19,19,0,0,1,11.4-4.64c.52,0,1-.06,1.54-.06C35.71,55.39,41.46,60.38,41.87,67Zm-6-49.88c2.25,7.93-1.15,16.23-6.58,17.76a7.29,7.29,0,0,1-1.92.26c-5,0-9.9-5-11.73-12a17.26,17.26,0,0,1,.24-10.56C17,9.41,19.09,7.23,21.69,6.5a7.29,7.29,0,0,1,1.92-.26C29.62,6.24,33.48,8.72,35.87,17.13ZM74.61,34.41v-15h-9.5v15h-15v9.5h15v15h9.5v-15h15v-9.5Z"/></g></g>
+                    </svg>
 
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                class="social_icon twitter" 
-                viewBox="0 0 512 512">
-                <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    class="social_icon twitter" 
+                    viewBox="0 0 512 512">
+                    <path fill="#656d89" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                    </svg>
                 
-                <svg xmlns="http://www.w3.org/2000/svg"  
-                class="social_icon linkedin"  
-                viewBox="0 0 448 512">
-                <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-        </div>
-    </footer>
-</div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  
+                    class="social_icon linkedin"  
+                    viewBox="0 0 448 512">
+                    <path fill="#656d89" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                    </svg>
+                 </div>
+         </footer>
+        
+     </div>
+<script src = "script.js"></script>
 </body>
+</html>

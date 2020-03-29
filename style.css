@@ -2,27 +2,44 @@
     list-style: none; 
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .container {
-    width: 1020px;
+    max-width: 1020px;
+    margin: auto;
     font-family: "Lato";
+    overflow: hidden;
 }
 
 .section{
     padding:0 40px;
 }
 
+
 /* HEADER */
+.header{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.burger-menu{
+    display:none;
+}
+
 .header-top{
     background-color: #2d303a;
     height: 89px;
     display: grid;
-    grid-template-columns: 106px 10px 400px 425px;
+    grid-template-columns: 106px 10px auto 425px;
 }
 
 .website-name{
@@ -75,12 +92,45 @@ body{
 }
 
 /* SLIDER */
+.carousel{
+    /*position: absolute;
+    transform: translate(-50%, -50%);*/
+    padding-top: 95px;
+    margin-bottom: -95px;
+}
+
+.slide{
+    display: inline-block;
+    position: relative;
+}
+
+.slide > img{
+    width: 100%;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(100% / (1020 / 594));
+}
+
+.slider-main{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    white-space: nowrap;
+    font-size: 0;
+}
+
 .slider-top{
     background-color:#f06c64;
-    height:594px;
     display: grid;
     grid-template-columns: 100px 265px 555px 100px;
     margin: auto;
+    position: absolute;
+    height: 100%;
+    top: 0;
 }
 
 .slider-top > img{
@@ -101,9 +151,22 @@ body{
 }
 
 .button{
-    background-color:#f06c64;
+    position: absolute;
     border: none;
     outline: none;
+    top: 0;
+    bottom: 0;
+    padding: 0 40px;
+    z-index: 1;
+    background: transparent;
+}
+
+.button[data-action="prev"]{
+    left: 0;
+}
+
+.button[data-action="next"]{
+    right: 0;
 }
 
 .button:hover{
@@ -114,15 +177,20 @@ body{
 .slider-bottom{
     background-color:#ea676b;
     height:6px;
+    position: sticky;
 }
 
 /* OUR SERVICES */
+.services{
+    padding-top: 95px;
+    margin-bottom: -95px;
+}
 .advantages{
     display: grid;
     grid-template-areas:
     "one two three"
     "four five six";
-    grid-template-columns: 320px 320px 300px;
+    grid-template-columns: 34% 34% 32%;
     grid-template-rows: 123px 135px;
 }
 
@@ -155,7 +223,7 @@ body{
 
 .our-services-top{
     background-color: #f2f2f2;
-    height: 494px;
+    padding-bottom: 62px;
 }
 
 .headline{
@@ -173,6 +241,11 @@ body{
     line-height: 30px;
     text-align: justify;
     margin-top: -7px;
+    margin-bottom: 9px;
+}
+
+.our-services-description{
+    margin-bottom: 0;
 }
 
 .paragraph{
@@ -198,10 +271,11 @@ body{
 /* PORTFOLIO */
 .portfolio-top{
     background-color: #2d303a;
-    height: 863px;
+    padding-bottom: 47px;
 }
 .portfolio{
-    padding-bottom: 9px;
+    padding-top: 95px;
+    margin-bottom: -95px;
 }
 .tab{
     background-color: #2d303a;
@@ -224,15 +298,14 @@ body{
 
 .gallery{
     display: flex;  
-    margin: 20px 2px 0 0px;
+    margin: 19px 0 0 0;
     flex-wrap: wrap;
-    width:960px;
+    justify-content: space-between;
 }
 
 .gallery > img {
-    width: 220px;
-    height: 187px;
-    margin: 0 20px 20px 0;
+    width: calc(25% - 15px);
+    margin-bottom: 20px;
 }
 
 .portfolio-bottom{
@@ -240,29 +313,35 @@ body{
     height: 6px;
 }
 
+.active-image{
+    border: 5px solid #F06C64;
+    box-sizing: border-box;
+}
+
 /* ABOUT US */
+.about{
+    padding-top: 95px;
+    margin-bottom: -95px;
+}
+
 .about-us-headline > h2{
     margin-bottom: 23px;
 }
 
 .about-us-description{
-    padding-bottom: 45px;
+    margin-bottom: 45px;
 }
 
 .about-us-top{
     background-color: #f2f2f2;
-    height: 728px;
 }
 
 .staff{
     display: flex;
-    width:960px;
     color: #767e9e;
     font-size: 12px;
-}
-
-.staff > img{
-    margin: 0 20px 20px 0;
+    justify-content: space-between;
+    padding-bottom: 59px;
 }
 
 .about-us-paragraph{
@@ -270,9 +349,11 @@ body{
     color:#767e9e;
     text-align: justify;
     line-height: 22px;    
-    padding-right: 21px;
-    margin-left: -1px;
-    max-width: 300px;
+    width: calc(33.3% - 13px);
+}
+
+.about-us-paragraph img{
+    width: 100%;
 }
 
 .about-us-caption{
@@ -282,7 +363,7 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 1px 0 0 0 ;
+    margin: 1px 0 0 0;
 }
 
 .social_icon{
@@ -328,7 +409,6 @@ body{
 
 /* GET A QUOTE */
 .get-a-quote-top{
-    height: 648px;
     background-color: #f06c64;
 }
 
@@ -356,19 +436,23 @@ body{
 .form{
     margin-top: 35px;
     margin-right: 20px;
-    max-width: 620px;
+    margin-bottom: 8px;
+    min-width: 620px;
+    display: flex;
+    flex-direction: column;
 }
 
-.form > input, textarea{
-    width: 604px;
+.form > input, .form > textarea{
+    width: 100%;
     height: 37px;
     background-color: #d6564f;
     outline: none;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     border: none;
     border-radius: 6px;
     padding-left: 15px;
     color:#f0d8d9;
+    box-sizing: border-box;
 }
 
 .form > input::placeholder{
@@ -390,9 +474,8 @@ body{
 }
 
 .form > textarea{
-    height: 191px;
+    height: 202px;
     resize: none;
-    width: 603px;
     padding-top: 9px;
 }
 
@@ -400,10 +483,34 @@ body{
     width: 150px;
     background-color: #d6564f;
     color:#f0d8d9;
-    margin-top: 5px;
-    margin-left: 225px;
+    margin: 5px auto 0;
 }
 
+.form-submited{
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+.form-submited-modal{
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    cursor: default;
+}
+.form-submited-control{
+    text-align: center;
+}
+.form-submited-main{
+    min-width: 320px;
+}
 .caption-light{
     font-size: 18px;
     color: #f0d8d9;
@@ -418,6 +525,9 @@ body{
     text-align: justify;
     letter-spacing: -0.06px;
     line-height: 22.3px;
+}
+.contact{
+    padding-top: 95px;
 }
 
 .contact-information{
@@ -470,3 +580,360 @@ body{
 }
 
 
+
+@media (max-width: 768px){
+
+    .button {
+        padding: 0 3%;
+    }
+
+    .prev{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .next{
+        width: 75%;
+        margin-top: 10px;
+        margin-left: 9px;
+    }
+
+    .button[data-action="next"] {
+        left: 67%;
+    }
+
+    .advantages{
+        display: grid;
+        grid-template-areas:
+        "one two "
+        "three four"
+        "five six";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 36% 36% 36%;
+        padding-bottom: 101px;
+        grid-gap: 10px;
+    }
+
+    .our-services-top{
+        padding-bottom: 0;
+    }
+
+    .our-services-caption {
+        padding-top: 7px;
+    }
+
+    .block > img {
+        margin-top: 27px;
+    }
+    .gallery > img{
+        width: calc(33.3% - 13px);
+    }
+
+    .description{
+        margin-bottom: 10px;
+        word-spacing: 5.3px;
+        text-align: start;
+        letter-spacing: -0.6px;
+        width: 95%;
+    }
+
+    .our-services-description{
+        width: 100%;
+    }
+
+    .our-services-bottom{
+        background-color: #f2f2f2;
+    }
+
+    .tabs{
+        margin-bottom: 28px;
+    }
+
+    .staff{
+        padding-bottom: 61px;
+    }
+
+
+    .about-us-headline{
+        padding-top: 26px;
+    }
+
+    .about-us-description{
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    .headline > h2{
+        margin-bottom: 25px;
+    }
+
+    .our-services-headline{
+        padding-top: 14px;
+    }
+
+    .about-us-paragraph{
+        width: calc(33.3% - 10px);
+    }
+    .about-us-paragraph > h3{
+        padding: 0;
+        margin-top: 4px;
+    }
+
+    .about-us-bottom{
+        background-color: #f2f2f2;
+    }
+
+    .social{
+        margin-top: -11px;
+    }
+
+    .headline3{
+        padding-top: 54px;
+        padding-left: 3px;
+    }
+
+    .description3{
+        text-align: start;
+        padding-left: 2px;
+        word-spacing: 1.3px;
+    }
+
+    .form{
+        margin-top: 15px;
+        margin-left: -1px;
+        margin-right: 29px;
+        margin-bottom: 39px;
+        min-width: 442px;
+    }
+
+    .form > input, .form > textarea{
+        margin-bottom: 13px;
+        padding-left: 10px;
+    }
+
+    .form > textarea{
+        height: 159px;
+        padding-top: 6px;
+    }
+
+    .form > input.submit-bottom{
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .caption-light {
+        margin: 13px 0 1px 0;
+    }
+
+    .contact-information{
+        margin-top: 10px;
+    }
+
+    .copyright{
+        padding-left: 0;
+        padding-top: 32px;
+        font-weight: 900;
+        letter-spacing: 0.4px;
+    }
+}
+
+@media (max-width: 375px){
+    
+    .button {
+        padding: 0 1%;
+    }
+
+    .button[data-action="next"] {
+        left: 33%;
+    }
+
+    .prev{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .next {
+        width: 75%;
+        margin-left: 4px;
+    }
+
+    .navigation-bar{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        padding-top: 26px;
+        margin-left: -10px;
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+    }
+
+    .active-burger-menu {
+        transform: rotate(90deg);
+    }
+
+    .header-top{
+        height: 71px;
+        display: flex;
+        text-align: center;
+        flex: auto;
+        position: relative;
+    }
+
+    .website-name{
+        font-size: 20px;
+        flex: auto;
+    }
+
+    .star-symbol{
+        display: none;
+    }
+
+    .website-name::after{
+        content: '*';
+        color:#f06c64;
+        font-size: 20px;
+        padding-top: 23px;
+    }
+
+    .header-bottom{
+        display: none;
+    }
+    .carousel{
+        padding-top: 67px;
+    }
+
+    .section {
+        padding: 0 30px;
+    }
+
+    .headline{
+        letter-spacing: -0.1px;
+        padding-top: 17px;
+    }
+
+    .our-services-headline{
+        padding-top: 1px;
+        padding-left: 3px;
+    }
+
+    .advantages{
+        display: grid;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six";
+        grid-template-columns: 100%;
+        grid-template-rows: 16% 15% 16% 16% 16% 16% 16%;
+        padding-bottom: 25px;
+        grid-gap: 10px;
+    }
+
+    .block > img {
+        margin-top: 14px;
+    }
+
+    .our-services-caption {
+        padding-top: 0px;
+        margin-top: 13px;
+    }
+
+    .description {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .tabs{
+        margin-bottom: 25px;
+    }
+
+    .gallery{
+        padding-bottom: 22px;
+    }
+
+    .gallery > img{
+        width: calc(50% - 6px);
+        margin-bottom: 13px;
+    }
+
+    .gallery > img:nth-last-child(-n+4){
+        display: none;
+    }
+
+    .portfolio-bottom {
+        background-color: #2d303a;
+    }
+    
+    .about-us-headline{
+        padding-top: 8px;
+        letter-spacing: 0.3px;
+    }
+
+    .about-us-description{
+        margin-bottom: 24px;
+        margin-top: -7px;
+    }
+
+    .staff{
+        flex-flow: column;
+        padding-bottom: 3px;
+    }
+
+    .about-us-paragraph{
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .about-us-paragraph > h3{
+        margin-top: 9px;
+    }
+
+    .about-us-bottom {
+        background-color: #f2f2f2;
+    }
+
+    .headline3 {
+        padding-top: 45px;
+        padding-left: 1px;
+    }
+
+    .form-and-information{
+        flex-wrap: wrap;
+    }
+
+    .form {
+        margin-top: 13px;
+        margin-left: 0;
+        margin-right: 29px;
+        margin-bottom: 17px;
+        min-width: 315px;
+    }
+
+    .form > input.submit-bottom {
+        width: 100%;
+        padding: 25px;
+        margin-top: 1px;
+    }
+
+    .contact-information{
+        margin-top: 9px;
+        line-height: 26px;
+        margin-bottom: 31px;
+    }
+
+    .get-a-quote-bottom{
+        background-color: #f06c64;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .icons{
+        flex: auto;
+        text-align: center;
+    }
+}
